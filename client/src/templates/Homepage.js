@@ -11,12 +11,11 @@ const HomepageTemplate = ({
   },
 }) => {
   return (
-    <Layout>
+    <Layout title={title}>
+      <p>{description}</p>
+
       <Link to="/">English</Link>
       <Link to="/et">Estonian</Link>
-
-      <h1>{title}</h1>
-      <p>{description}</p>
     </Layout>
   )
 }
